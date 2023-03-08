@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues",
+  "info": {
+    "singularName": "issue",
+    "pluralName": "issues",
+    "displayName": "Issue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post",
+      "mappedBy": "issue"
+    }
+  }
+}
