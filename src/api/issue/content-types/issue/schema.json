@@ -21,11 +21,10 @@
     "number": {
       "type": "integer"
     },
-    "post": {
+    "posts": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::post.post",
-      "mappedBy": "issue"
+      "relation": "oneToMany",
+      "target": "api::post.post"
     },
     "latest": {
       "type": "boolean"
