@@ -28,6 +28,12 @@
     },
     "latest": {
       "type": "boolean"
+    },
+    "desktopLayout": {
+      "type": "string"
+    },
+    "tabletLayout": {
+      "type": "string"
     }
   }
 }
