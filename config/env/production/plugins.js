@@ -22,7 +22,7 @@ module.exports = ({ env }) => ({
       amountLimit: 100,
       apolloServer: {
         tracing: true,
-        inspection: true,
+        introspection: true,
       },
     },
   },
